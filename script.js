@@ -75,7 +75,11 @@ function okta() {
     if(ilustracionesEst==0){
       //cuadros
       fP.style.display = "none";
-      fI.style.display = "block";
+      if(canvasEst == 1){
+        setTimeout(function(){fI.style.display = "block"}, 1000);}
+      else {
+        fI.style.display = "block";
+      }
       //general
       document.getElementById("superior").style.bottom = "calc(100% - 64px)";
       document.getElementById("textoMasInfo").style.textDecoration = "none";

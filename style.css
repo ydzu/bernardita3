@@ -167,12 +167,12 @@ p{
 
 #productosCuadro{
   display: none;
-  background-color: pink;
   animation-delay: 3s;
+  background-color: #C0E3D5;
 }
 
 #ilustracionesCuadro{
   display: none;
-  background-color: blue;
   animation-delay: 3s;
+  background-color: #F1CDC5;
 }
