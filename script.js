@@ -1,42 +1,32 @@
 window.onresize = function(){ location.reload();}
-var productosEst = 0, ilustracionesEst = 0, canvasEst = 0;
+var productosEst = 0, ilustracionesEst = 0, canvasEst = 1;
 
 var fP = document.getElementById("productosCuadro");
 var fI = document.getElementById("ilustracionesCuadro");
 
+function apagar() {
+  fP.style.display = "none";
+  fI.style.display = "none";
+  clickEnProductos = 0;
+  clickEnIlustraciones = 0;
+}
+
 function okta() {
-
-  //FUNCION PARA PRENDER FRAMES ////////////////////////
-
-  function turnOnFrame(fX){
-
-      if (fX.style.display == "none"){
-        fX.style.display = "block";
-      }
-      else{
-        fX.style.display = "none";
-      }
-  }
-
-  //VARIABLES PARA RECONOCER PRIMER CLICK ////////////////////////
-
-  var clickEnProductos = 0;
-  var clickEnIlustraciones = 0;
 
   //PRODUCTOS ////////////////////////
 
   document.getElementById("productos").onclick = function()
   {
-    clickEnProductos = 1;
-    if (clickEnIlustraciones == 1){
-      turnOnFrame(fI);
-    }
-    turnOnFrame(fP);
-
     if(productosEst==0){
+      //cuadros
+      if(canvasEst == 1){
+        setTimeout(function(){fP.style.display = "block"}, 1000);}
+      else {
+        fP.style.display = "block";
+      }
+      fI.style.display = "none";
       //general
-      document.getElementById("menuContainerMacro").style.height = "calc(100% - 8px)";
-      document.getElementById("blue").style.top = "-84vh";
+      document.getElementById("superior").style.bottom = "calc(100% - 64px)";
       document.getElementById("textoMasInfo").style.textDecoration = "none";
       document.getElementById("textoMasInfo").style.color = "#EE1D23";
       document.getElementById("masinfo").style.backgroundColor = "white";
@@ -55,9 +45,11 @@ function okta() {
       canvasEst = 0;
     }
     else{
+      //cuadros
+      fP.style.display = "none";
+      fI.style.display = "none";
       //general
-      document.getElementById("menuContainerMacro").style.height = "124px";
-      document.getElementById("blue").style.top = "4px";
+      document.getElementById("superior").style.bottom = "68px";
       //productos
       document.getElementById("textoProductos").style.textDecoration = "none";
       document.getElementById("textoProductos").style.color = "#EE1D23";
@@ -80,16 +72,12 @@ function okta() {
 
   document.getElementById("ilustraciones").onclick = function()
   {
-    clickEnIlustraciones = 1;
-    if (clickEnProductos == 1){
-      turnOnFrame(fP);
-    }
-    turnOnFrame(fI);
-
     if(ilustracionesEst==0){
+      //cuadros
+      fP.style.display = "none";
+      fI.style.display = "block";
       //general
-      document.getElementById("menuContainerMacro").style.height = "calc(100% - 8px)";
-      document.getElementById("blue").style.top = "-84vh";
+      document.getElementById("superior").style.bottom = "calc(100% - 64px)";
       document.getElementById("textoMasInfo").style.textDecoration = "none";
       document.getElementById("textoMasInfo").style.color = "#EE1D23";
       document.getElementById("masinfo").style.backgroundColor = "white";
@@ -108,9 +96,11 @@ function okta() {
       canvasEst = 0;
     }
     else {
+      //cuadros
+      fP.style.display = "none";
+      fI.style.display = "none";
       //general
-      document.getElementById("menuContainerMacro").style.height = "124px";
-      document.getElementById("blue").style.top = "4px";
+      document.getElementById("superior").style.bottom = "68px";
       //productos
       document.getElementById("textoProductos").style.textDecoration = "none";
       document.getElementById("textoProductos").style.color = "#EE1D23";
@@ -130,10 +120,14 @@ function okta() {
 
   document.getElementById("masinfo").onclick = function()
   {
-    if(canvasEst==0){
+    apagar();
+
+    if(canvasEst==1){
+      //cuadros
+      fP.style.display = "none";
+      fI.style.display = "none";
       //general
-      document.getElementById("menuContainerMacro").style.height = "calc(100% - 8px)";
-      document.getElementById("blue").style.top = "-84vh";
+      document.getElementById("superior").style.bottom = "calc(100% - 64px)";
       document.getElementById("textoMasInfo").style.textDecoration = "line-through";
       document.getElementById("textoMasInfo").style.color = "white";
       document.getElementById("masinfo").style.backgroundColor = "#EE1D23";
@@ -149,12 +143,14 @@ function okta() {
 
       productosEst = 0;
       ilustracionesEst = 0;
-      canvasEst = 1;
+      canvasEst = 0;
     }
     else {
+      //cuadros
+      fP.style.display = "none";
+      fI.style.display = "none";
       //general
-      document.getElementById("menuContainerMacro").style.height = "124px";
-      document.getElementById("blue").style.top = "4px";
+      document.getElementById("superior").style.bottom = "68px";
       document.getElementById("textoMasInfo").style.textDecoration = "none";
       document.getElementById("textoMasInfo").style.color = "#EE1D23";
       document.getElementById("masinfo").style.backgroundColor = "white";
@@ -170,7 +166,7 @@ function okta() {
 
       productosEst = 0;
       ilustracionesEst = 0;
-      canvasEst = 0;
+      canvasEst = 1;
     }
 
 
