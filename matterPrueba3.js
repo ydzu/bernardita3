@@ -76,7 +76,7 @@ engine.world.gravity.x = Math.random()*0.4-0.2;
       render: {
         fillStyle: '#EDC1DD',
         sprite: {
-          texture: 'nombre1.png'
+          texture: 'assets/nombre1.png'
         }
       }
     });
@@ -86,7 +86,7 @@ engine.world.gravity.x = Math.random()*0.4-0.2;
       render: {
         fillStyle: '#EDC1DD',
         sprite: {
-          texture: 'nombre2.png'
+          texture: 'assets/nombre2.png'
         }
       }
     });
@@ -95,7 +95,7 @@ engine.world.gravity.x = Math.random()*0.4-0.2;
       restitution: 0.5,
       render: {
         sprite: {
-          texture: 'nombre3.png'
+          texture: 'assets/nombre3.png'
         }
       }
     });
@@ -105,7 +105,7 @@ engine.world.gravity.x = Math.random()*0.4-0.2;
       render: {
         fillStyle: '#EDC1DD',
         sprite: {
-          texture: 'nombre4.png'
+          texture: 'assets/nombre4.png'
         }
       }
     });

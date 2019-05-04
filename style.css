@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: content-box;
-  cursor: url("cursor4.png") 16 16, pointer;
+  cursor: url("assets/cursor4.png") 16 16, pointer;
 }
 body{
   height: 100vh;
@@ -109,11 +109,11 @@ p{
   user-select: none;
   -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
   user-drag: none;
-  cursor: url("cursor2p.png"),move;
+  cursor: url("assets/cursor2p.png"),move;
 }
 
 #spinner:active{
-  cursor: url("cursor2c.png") ,move;
+  cursor: url("assets/cursor2c.png") ,move;
 }
 
 @keyframes spin {
@@ -131,7 +131,7 @@ p{
   height: 100vh;
   width: 42px;
   top:0;
-  background-image: url(banner3.png);
+  background-image: url(assets/banner3.png);
   background-color:#EE1D23;
   background-size: cover;
   background-position: -7px 0px;
