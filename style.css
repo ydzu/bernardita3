@@ -10,7 +10,7 @@ body{
   margin: 2px;
   padding: 0;
   /*background-image: url("court.png");  The image used */
-  background-color: white;
+  background-color: #EE1D23;
   transition: 600ms all ease;
 
 }
@@ -41,6 +41,7 @@ p{
 
 #superior{
   position: fixed;
+  z-index: 3;
   bottom:68px;
   left: 4px;
   width: calc(100vw - 8px);
@@ -60,6 +61,7 @@ p{
 #masinfo{
   display: block;
   position: fixed;
+  z-index: 3;
   bottom: 4px;
   left: 4px;
   width: calc(100% - 8px);
@@ -163,16 +165,18 @@ p{
   left: 42px;
   height: calc(100% - 140px);
   width: calc(100% - 84px);
+  border: none;
+  outline: none;
+  overflow: auto;
 }
 
 #productosCuadro{
   display: none;
   animation-delay: 3s;
-  background-color: #C0E3D5;
 }
 
 #ilustracionesCuadro{
   display: none;
   animation-delay: 3s;
-  background-color: #F1CDC5;
+  background-color: white;
 }

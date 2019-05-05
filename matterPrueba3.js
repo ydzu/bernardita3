@@ -1,5 +1,4 @@
 var myCanvas = document.getElementById('blue');
-var myContainer = document.getElementById('container');
 
 
 
