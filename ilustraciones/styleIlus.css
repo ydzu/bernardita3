@@ -17,53 +17,35 @@ p{
   color: #EE1D23;
 }
 
-#drefLeft{
-  float: left;
-  transform: translate(-50%);
-  width: 50%;
+#dref{
+  position: fixed;
+  width: 100%;
   left: 0;
   height: 100%;
   overflow-y: auto;
 }
-#drefLeft::-webkit-scrollbar {
+#dref::-webkit-scrollbar {
     display: none;
 }
-.left{
+.unic{
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  padding-top: 12%;
+  padding-bottom: 12%;
 }
 
-#drefRight{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  overflow-y: auto;
-}
-#drefRight::-webkit-scrollbar {
-    display: none;
-}
-.right{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.oneProduct{
-  height: 520px;
-  width: 520px;
+.oneIlus{
+  height: 640px;
+  width: 640px;
   padding: 20px;
   margin: 40px;
   outline:4px solid #EE1D23;
   background-color: white;
   transition: 300ms all ease;
 }
-.oneProduct:hover{
+.oneIlus:hover{
   background-color: #EE1D23;
 }
