@@ -63,7 +63,10 @@ p{
   outline:4px solid #EE1D23;
   background-color: white;
   transition: 300ms all ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
 }
 .oneProduct:hover{
-  background-color: #EE1D23;
+  background-size: 380px;
 }
