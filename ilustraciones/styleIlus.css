@@ -34,7 +34,7 @@ p{
   flex-wrap: nowrap;
   align-items: center;
   padding-top: 12%;
-  padding-bottom: 12%;
+  padding-bottom: -32%;
 }
 
 .oneIlus{
@@ -43,9 +43,17 @@ p{
   padding: 20px;
   margin: 40px;
   outline:4px solid #EE1D23;
-  background-color: white;
+  background-color: #EE1D23;
   transition: 300ms all ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 680px;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 260px;
 }
 .oneIlus:hover{
-  background-color: #EE1D23;
+  background-color: red;
+  background-size: 670px;
 }

@@ -126,7 +126,7 @@ function okta() {
   {
     apagar();
 
-    if(canvasEst==1){
+    if(canvasEst==1 || ilustracionesEst == 1 || productosEst == 1){
       //cuadros
       fP.style.display = "none";
       fI.style.display = "none";
