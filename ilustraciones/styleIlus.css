@@ -17,6 +17,13 @@ p{
   color: #EE1D23;
 }
 
+.price{
+  font-size: 68px;
+  align-self: flex-end;
+  transition: 420ms all ease;
+  opacity: 0;
+}
+
 #dref{
   position: fixed;
   width: 100%;
@@ -43,7 +50,7 @@ p{
   padding: 20px;
   margin: 40px;
   outline:4px solid #EE1D23;
-  background-color: #EE1D23;
+  background-color: white;
   transition: 300ms all ease;
   background-repeat: no-repeat;
   background-position: center;
@@ -52,8 +59,15 @@ p{
   top: 50%;
   transform: translateY(-50%);
   margin-bottom: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .oneIlus:hover{
-  background-color: red;
+  background-color: white;
   background-size: 670px;
+}
+.oneIlus:hover > .price{
+  opacity: 1;
 }
